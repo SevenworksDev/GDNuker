@@ -4,7 +4,8 @@ from proxpy import request
 from json import loads
 from threading import Thread
 
-#dlprox("https://api.proxyscrape.com/v2/?request=displayproxies&protocol=http&timeout=10000&country=all&ssl=all&anonymity=all").get()
+proxyURL = input("HTTP Proxy List URL: ")
+dlprox(proxyURL).get()
 #with open('.proxpy-proxies', 'r+') as file: file.write(file.read().replace('\n\n', '\n'))
 
 r = request()
